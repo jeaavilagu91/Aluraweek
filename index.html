@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">    
+    <link rel="icon" type="image/png" href="assest/icon_shop.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonte del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <title>Alura Geek</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+        <img src="assest/icon_shop.png" class="header-img" alt="logo-catalogo"/>
+            <h1 class="header-title">CATÁLOGO ALURA GEEK</h1>
+        <img src="assest/icon_shop.png" class="header-img" alt="logo-catalogo"/>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-container">
+            <h1 class="title-container">Mis Productos agregados</h1>
+          
+            <div data-product class="product-container">
+               
+            </div>
+          
+        </section>
+        <section class="agregar-productos">
+            <h1>Agregar Productos</h1>
+            <div data-form class="formulario">
+                <form class="formulario-agregar-productos">
+                    <input data-nombre-producto type="text" placeholder="Nombre del producto" class="nombre-producto" id="id-nom-prod" required>
+                    <input data-precio type="number" placeholder="Ingresa el precio" class="precio-producto" id="id-precio-prod" required>
+                    <input data-imagen type="url" placeholder="Ingresa la URL de la imagen" class="imagen-url-producto" id="id-url-prod" required>
+                    <div class="botones">
+                        <button class="boton-enviar" type="submit">Enviar</button>
+                        <button class="boton-limpiar" type="reset">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-h2-img">
+            <img src="assest/icon_shop.png" class="catalog-img-footer" alt="logo-catalogo"/>
+            <h2>CATÁLOGO ALURA GEEK</h2> 
+            <img src="assest/icon_shop.png" class="catalog-img-footer" alt="logo-catalogo"/>
+        </div>
+        <p class="text-footer">&#169; Desarrollado por Jeisson Ávila G</p>
+        <p>2024</p>
+    </footer>
+    <script src="js/controllers/main.js" type="module"></script>
+</body>
+</html>
